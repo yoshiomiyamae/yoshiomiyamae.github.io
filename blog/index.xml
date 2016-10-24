@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog-rsses on 一即一切 一切即一</title>
-    <link>http://yoshiomiyamae.github.io/blog/index.xml</link>
+    <link>https://yoshiomiyamae.github.io/blog/index.xml</link>
     <description>Recent content in Blog-rsses on 一即一切 一切即一</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 24 Oct 2016 21:29:32 +0900</lastBuildDate>
-    <atom:link href="http://yoshiomiyamae.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yoshiomiyamae.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ブログ開始</title>
-      <link>http://yoshiomiyamae.github.io/blog/201610242129/</link>
+      <link>https://yoshiomiyamae.github.io/blog/201610242129/</link>
       <pubDate>Mon, 24 Oct 2016 21:29:32 +0900</pubDate>
       
-      <guid>http://yoshiomiyamae.github.io/blog/201610242129/</guid>
+      <guid>https://yoshiomiyamae.github.io/blog/201610242129/</guid>
       <description>&lt;p&gt;Github PagesとHUGOを使って、ブログを作ってみました。&lt;br /&gt;
 HUGOのテンプレート作成に苦戦しており、今も中途半端な状態ですが、&lt;br /&gt;
 やっと見られるような状態になったので公開します。&lt;/p&gt;
