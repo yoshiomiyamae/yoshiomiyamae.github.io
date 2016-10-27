@@ -58,38 +58,77 @@ ga('send', 'pageview');
     <ul class="breadcrumbs">
       <li><a href="https://yoshiomiyamae.github.io/">Home</a></li>
       
+      <li class="disabled">blog</li>
+      <li><span class="show-for-sr">Current: </span> ファイルシステムの勉強</li>
+      
     </ul>
   </nav>
 </header>
 
-<div class="row" id="content"><div class="blog-post">
+<div class="row" id="content">
+  <div class="medium-8 columns">
+    <div class="blog-post">
   <h3><a href="https://yoshiomiyamae.github.io/blog/201610272259/">ファイルシステムの勉強</a> <small class="post_time">2016-10-27 22:59:41 &#43;0900 JST</small></h3>
+  <h6><small>Author: </small><a href="https://github.com/yoshiomiyamae"><img src="https://www.gravatar.com/avatar/2b7dff524ea0634e1cc1574b876af59b?s=32&d=identicon" style="border-radius: 50%">Yoshio Miyamae </a></h4>
   <p>勉強のためにOSを作ろうと思い立ったので、とりあえずFATの勉強から始めました。<br />
 <a href="https://github.com/yoshiomiyamae/til/blob/master/filesystem/fat.md">yoshiomiyamae/til/filesystem/fat.md</a><br />
 とりあえずブートセクタのうち、BPBの構成は理解できたように思います。<br />
 明日以降、時間があればブートローダーの開発をしていきたいと思います。<br />
 </p>
   
-  <div class="read-more-link">
-    <a href="/blog/201610272259/">Read More…</a>
-  </div>
+<div class="share-buttons">
+  <span style="font-size: 8px">シェアする</span>
+  <div class="inner">
   
-  <div class="callout">
-      <a href="https://github.com/yoshiomiyamae"><img src="https://www.gravatar.com/avatar/2b7dff524ea0634e1cc1574b876af59b?s=32&d=identicon" style="border-radius: 50%">Yoshio Miyamae </a>
+  <a href="http://b.hatena.ne.jp/entry/https://yoshiomiyamae.github.io/blog/201610272259/" class="hatena-bookmark-button" target="_blank" data-hatena-bookmark-title="ファイルシステムの勉強" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"><i class="blogicon-bookmark lg"></i> <span class="hatena-bookmark-count share-text"><i class="fa fa-spinner fa-spin"></i></span><br> <span class="share-text">Bookmark!</span></a>
+  
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fyoshiomiyamae.github.io%2fblog%2f201610272259%2f" class="facebook-button" onclick="window.open(this.href,'FaceBookWindow','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;" title="Facebookでシェア"><i class="blogicon-facebook lg"></i> <span class="facebook-count share-text"><i class="fa fa-spinner fa-spin"></i></span><br><span class="share-text">Facebook</span></a>
+  
+  <a href="http://twitter.com/intent/tweet?text=%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%ae%e5%8b%89%e5%bc%b7 https%3a%2f%2fyoshiomiyamae.github.io%2fblog%2f201610272259%2f" class="twitter-button" onclick="window.open(this.href, 'TwitterWindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="blogicon-twitter lg"></i><br><span class="share-text">Twitter</span></a>
+  
+  <a href="https://plus.google.com/share?url=https%3a%2f%2fyoshiomiyamae.github.io%2fblog%2f201610272259%2f" onclick="window.open(this.href, 'GooglePlusWindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="googleplus-button"><i class="fa fa-google-plus"></i><br><span class="share-text">Google+</span></a>
+  
+  <a href="http://getpocket.com/edit?url=https%3a%2f%2fyoshiomiyamae.github.io%2fblog%2f201610272259%2f" class="pocket-button" target="_blank"><i class="fa fa-get-pocket"></i><br><span class="share-text">Pocket</span></a>
   </div>
 </div>
-<div class="blog-post">
-  <h3><a href="https://yoshiomiyamae.github.io/blog/201610242129/">ブログ開始</a> <small class="post_time">2016-10-24 21:29:32 &#43;0900 JST</small></h3>
-  Github PagesとHUGOを使って、ブログを作ってみました。 HUGOのテンプレート作成に苦戦しており、今も中途半端な状態ですが、 やっと見られるよ
-  
-  <div class="read-more-link">
-    <a href="/blog/201610242129/">Read More…</a>
-  </div>
-  
-  <div class="callout">
-      <a href="https://github.com/yoshiomiyamae"><img src="https://www.gravatar.com/avatar/2b7dff524ea0634e1cc1574b876af59b?s=32&d=identicon" style="border-radius: 50%">Yoshio Miyamae </a>
-  </div>
+<script>
+
+function getHatenaBookmarkCount(entryUrl, selcter) {
+entryUrl = 'http://api.b.st-hatena.com/entry.count?url=' + encodeURIComponent(entryUrl)
+$.ajax({
+  url:entryUrl,
+  dataType:'jsonp',
+}).then(
+  function(result){ $(selcter).text(result || 0); },
+  function(){ $(selcter).text('0'); }
+);
+}
+
+function getFacebookCount(entryUrl, selcter) {
+entryUrl = 'https://graph.facebook.com/' + encodeURIComponent(entryUrl)
+$.ajax({
+  url:entryUrl,
+  dataType:'jsonp'
+}).then(
+  function(result){
+      if(result.share && result.share.share_count) {
+          $(selcter).text(result.share.share_count);
+      } else {
+          $(selcter).text('0');
+      }
+  },
+  function(){ $(selcter).text('0'); }
+);
+}
+$(function(){
+getHatenaBookmarkCount('{Permalink}', '.hatena-bookmark-count');
+getFacebookCount('{Permalink}', '.facebook-count');
+});
+</script>
+
 </div>
+
+  </div>
 </div>
 
 <hr />

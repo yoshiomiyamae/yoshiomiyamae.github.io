@@ -1,0 +1,74 @@
+/*share-botton*/
+.share-buttons{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.share-buttons .inner a {
+    position: relative;
+    display: inline-block;
+    width: 15%;
+    height: 45px;
+    line-height: 25px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding:5px;
+}
+.share-buttons .inner .share-text{
+    font-size: 15px;
+}
+.share-buttons .inner .hatena-bookmark-button{
+    background: #008fde;
+    box-shadow: 0 3px #5478a5;
+}
+.share-buttons .inner .hatena-bookmark-button:hover{
+    background: #1db4eb;
+}
+.share-buttons .inner .hatena-bookmark-button:active{
+    background: #5478a5;
+}
+.share-buttons .inner .facebook-button{
+    background: #305097;
+    box-shadow: 0 3px #213254;
+}
+.share-buttons .inner .facebook-button:hover{
+    background: #4c70ba;
+}
+.share-buttons .inner .facebook-button:active{
+    background: #213254;
+}
+.share-buttons .inner .twitter-button{
+    background: #55acee;
+    box-shadow: 0 3px #0285b7;
+}
+.share-buttons .inner .twitter-button:hover{
+    background: #83c3f3;
+}
+.share-buttons .inner .twitter-button:active{
+    background: #0285b7;
+}
+.share-buttons .inner .googleplus-button{
+    background: #db4a39;
+    box-shadow: 0 3px #a23629;
+}
+.share-buttons .inner .googleplus-button:hover{
+    background: #e47365;
+}
+.share-buttons .inner .googleplus-button:active{
+    background: #a23629;
+}
+.share-buttons .inner .pocket-button{
+    background: #ee4256;
+    box-shadow: 0 3px 0 #b5392c;
+}
+.share-buttons .inner .pocket-button:hover{
+    background: #f26f7f;
+}
+.share-buttons .inner .pocket-button:active{
+    background: #b5392c;
+}
+.share-buttons .inner .share-buttons a:active{
+    top: 3px;
+    box-shadow: none;
+}
